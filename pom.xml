@@ -4,7 +4,7 @@
   <artifactId>processpuzzle-parent</artifactId>
   <name>ProcessPuzzle - Parent</name>
   <packaging>pom</packaging>
-  <version>0.0.2</version>
+  <version>0.0.3-SNAPSHOT</version>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -66,7 +66,7 @@
   <scm>
     <url>https://github.com/ZsZs/processpuzzle-parent</url>
     <connection>scm:git:https://github.com/ZsZs/processpuzzle-parent.git</connection>
-    <developerConnection>scm:git:https//git@github.com/ZsZs/processpuzzle-parent.git</developerConnection>
+    <developerConnection>scm:git:https://github.com/ZsZs/processpuzzle-parent.git</developerConnection>
     <tag>processpuzzle-parent-0.0.2</tag>
   </scm>
 
