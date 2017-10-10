@@ -368,12 +368,6 @@
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
     </repository>
 
-    <site>
-      <id>git-hub-finesse-connect</id>
-      <name>FitNesseConnect Wiki</name>
-      <url>https://github.com/ZsZs/FitNesseConnect/wiki</url>
-    </site>
-
   </distributionManagement>
 
 </project>
