@@ -67,7 +67,6 @@
     <url>https://github.com/ZsZs/processpuzzle-parent</url>
     <connection>scm:git:https://github.com/ZsZs/processpuzzle-parent.git</connection>
     <developerConnection>scm:git:https://github.com/ZsZs/processpuzzle-parent.git</developerConnection>
-    <tag>processpuzzle-parent-0.0.2</tag>
   </scm>
 
   <issueManagement>
