@@ -288,7 +288,7 @@
           <configuration>
             <nodeVersion>${node.version}</nodeVersion>
             <npmVersion>${npm.version}</npmVersion>
-            <installDirectory>target</installDirectory>
+            <installDirectory>${project.build.directory}</installDirectory>
           </configuration>
   
           <executions>
