@@ -21,7 +21,7 @@ deploy:
     branch: development
 - provider: script
   skip_cleanup: true
-  script: mvn release:clean release:prepare -Prelease-sign-artifacts -DautoVersionSubm --settings travis-maven-settings.xml -Dsettings.security=travis-maven-settings-security.xml -B
+  script: mvn release:clean release:prepare -Prelease-sign-artifacts -DautoVersionSubm --settings travis-maven-settings.xml -B
   on:
     branch: master
     tags: true
