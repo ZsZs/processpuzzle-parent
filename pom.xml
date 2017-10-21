@@ -435,6 +435,20 @@
 
   <profiles>
     <profile>
+      <id>build-angular-ui</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <skipFrontEndPluginRun>false</skipFrontEndPluginRun>
+      </properties>
+      <build>
+        <plugins>
+        </plugins>
+      </build>
+    </profile>
+
+    <profile>
       <id>release-sign-artifacts</id>
       <activation>
         <property>
