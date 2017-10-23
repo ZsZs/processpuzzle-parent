@@ -30,7 +30,7 @@
     <maven.plugin.javadoc.version>2.10.4</maven.plugin.javadoc.version>
     <maven.plugin.nexus.version>1.6.8</maven.plugin.nexus.version>
     <maven.plugin.source.version>3.0.1</maven.plugin.source.version>
-    <node.version>v8.6.0</node.version>
+    <node.version>v8.7.0</node.version>
     <npm.version>5.5.1</npm.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -310,7 +310,7 @@
                 <goal>npm</goal>
               </goals>
               <configuration>
-                <arguments>run-script lint</arguments>
+                <arguments>run-script lint --verbose</arguments>
               </configuration>
             </execution>
 
