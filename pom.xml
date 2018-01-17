@@ -4,12 +4,12 @@
   <artifactId>processpuzzle-parent</artifactId>
   <name>ProcessPuzzle - Parent</name>
   <packaging>pom</packaging>
-  <version>0.0.22-SNAPSHOT</version>
+  <version>0.0.23-SNAPSHOT</version>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.5.7.RELEASE</version>
+    <version>1.5.9.RELEASE</version>
     <relativePath />
   </parent>
 
