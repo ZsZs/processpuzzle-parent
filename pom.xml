@@ -4,7 +4,7 @@
   <artifactId>processpuzzle-parent</artifactId>
   <name>ProcessPuzzle - Parent</name>
   <packaging>pom</packaging>
-  <version>0.0.23-SNAPSHOT</version>
+  <version>0.1.0-SNAPSHOT</version>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -30,8 +30,8 @@
     <maven.plugin.javadoc.version>2.10.4</maven.plugin.javadoc.version>
     <maven.plugin.nexus.version>1.6.8</maven.plugin.nexus.version>
     <maven.plugin.source.version>3.0.1</maven.plugin.source.version>
-    <node.version>v9.3.0</node.version>
-    <npm.version>5.6.0</npm.version>
+    <node.version>v9.8.0</node.version>
+    <npm.version>5.7.1</npm.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <skip.integration.test>false</skip.integration.test>
@@ -83,7 +83,7 @@
     <url>https://github.com/ZsZs/processpuzzle-parent</url>
     <connection>scm:git:https://github.com/ZsZs/processpuzzle-parent.git</connection>
     <developerConnection>scm:git:https://github.com/ZsZs/processpuzzle-parent.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>processpuzzle-parent-0.0.23</tag>
   </scm>
 
   <issueManagement>
