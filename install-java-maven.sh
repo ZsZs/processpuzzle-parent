@@ -7,20 +7,27 @@ git --version
 cd ~/ && mkdir tools && cd tools
 
 echo "Installing Java 8"
-wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-x64.tar.gz
-tar -xzf jdk-8u101-linux-x64.tar.gz
-export JAVA_HOME=/home/ubuntu/tools/jdk1.8.0_101
+wget --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u172-b11/a58eab1ec242421181065cdc37240b08/jdk-8u172-linux-x64.tar.gz -O jdk-8u172-linux-x64.tar.gz
+tar -xzf jdk-8u172-linux-x64.tar.gz
+rm jdk-8u172-linux-x64.tar.gz
+export JAVA_HOME=/home/ubuntu/tools/jdk1.8.0_172
 export PATH=$JAVA_HOME/bin:$PATH
-rm jdk-8u101-linux-x64.tar.gz
 java -version
 
 echo "Installing Maven 3"
 sudo apt-get remove maven2
-wget http://apache.mirror.anlx.net/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.zip
-unzip apache-maven-3.5.0-bin.zip
-export MVN_HOME=/home/ubuntu/tools/apache-maven-3.5.0
-export PATH=$MVN_HOME/bin:$PATH
-rm apache-maven-3.5.0-bin.zip
+wget http://mirrors.ae-online.de/apache/maven/maven-3/3.5.3/binaries/apache-maven-3.5.3-bin.zip
+unzip apache-maven-3.5.3-bin.zip
+rm apache-maven-3.5.3-bin.zip
+export MAVEN_HOME=/home/ubuntu/tools/apache-maven-3.5.3
+export PATH=$MAVEN_HOME/bin:$PATH
 mvn -version
+
+echo "Update NodeJS and NPM"
+nvm install v10.1.0
+nvm use v10.1.0
+npm install -g npm
+node --version
+npm --version
 
 echo "Happy coding!"
