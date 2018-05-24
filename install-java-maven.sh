@@ -45,4 +45,6 @@ sudo apt-get update
 sudo apt-get install chromium-browser
 export CHROME_BIN=/usr/bin/chromium-browser
 
+cd ~/workspace
+
 echo "Happy coding!"
