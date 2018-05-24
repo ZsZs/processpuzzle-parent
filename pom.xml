@@ -4,7 +4,7 @@
   <artifactId>processpuzzle-parent</artifactId>
   <name>ProcessPuzzle - Parent</name>
   <packaging>pom</packaging>
-  <version>0.1.4-SNAPSHOT</version>
+  <version>0.1.5-SNAPSHOT</version>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -30,8 +30,8 @@
     <maven.plugin.javadoc.version>2.10.4</maven.plugin.javadoc.version>
     <maven.plugin.nexus.version>1.6.8</maven.plugin.nexus.version>
     <maven.plugin.source.version>3.0.1</maven.plugin.source.version>
-    <node.version>v9.8.0</node.version>
-    <npm.version>5.7.1</npm.version>
+    <node.version>v10.1.0</node.version>
+    <npm.version>6.1.0</npm.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <skip.integration.test>false</skip.integration.test>
@@ -304,13 +304,24 @@
             </execution>
 
             <execution>
-              <id>npm run-script tslint</id>
+              <id>npm rebuidl node-sass</id>
+              <phase>process-source</phase>
+              <goals>
+                <goal>npm</goal>
+              </goals>
+              <configuration>
+                <arguments>rebuild node-sass --force</arguments>
+              </configuration>
+            </execution>
+
+            <execution>
+              <id>npm run-script lint</id>
               <phase>process-sources</phase>
               <goals>
                 <goal>npm</goal>
               </goals>
               <configuration>
-                <arguments>run-script lint --verbose</arguments>
+                <arguments>run lint</arguments>
               </configuration>
             </execution>
 
@@ -321,7 +332,7 @@
                 <goal>npm</goal>
               </goals>
               <configuration>
-                <arguments>run-script test</arguments>
+                <arguments>run test</arguments>
               </configuration>
             </execution>
 
@@ -332,7 +343,7 @@
                 <goal>npm</goal>
               </goals>
               <configuration>
-                <arguments>run-script build-${DEPLOYMENT_ENVIRONMENT}</arguments>
+                <arguments>run build-${DEPLOYMENT_ENVIRONMENT}</arguments>
               </configuration>
             </execution>
           </executions>
