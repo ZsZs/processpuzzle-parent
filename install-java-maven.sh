@@ -30,6 +30,13 @@ npm install -g npm
 node --version
 npm --version
 
+echo "Install global JS tools"
+npm install -g typescript
+npm install -g @angular/cli@latest
+npm install -g @angular/compiler-cli
+npm install -g npm-check-updates
+npm install -g karma-cli
+
 echo "Install headless Chrome"
 sudo apt-get update
 sudo apt-get install software-properties-common
