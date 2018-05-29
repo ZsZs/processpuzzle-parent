@@ -4,7 +4,7 @@
   <artifactId>processpuzzle-parent</artifactId>
   <name>ProcessPuzzle - Parent</name>
   <packaging>pom</packaging>
-  <version>0.1.5-SNAPSHOT</version>
+  <version>0.1.6-SNAPSHOT</version>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -294,7 +294,7 @@
 
             <execution>
               <id>npm update</id>
-              <phase>process-source</phase>
+              <phase>process-sources</phase>
               <goals>
                 <goal>npm</goal>
               </goals>
@@ -305,7 +305,7 @@
 
             <execution>
               <id>npm rebuidl node-sass</id>
-              <phase>process-source</phase>
+              <phase>process-sources</phase>
               <goals>
                 <goal>npm</goal>
               </goals>
