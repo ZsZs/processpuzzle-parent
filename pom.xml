@@ -294,7 +294,7 @@
 
             <execution>
               <id>npm update</id>
-              <phase>process-source</phase>
+              <phase>process-sources</phase>
               <goals>
                 <goal>npm</goal>
               </goals>
@@ -305,7 +305,7 @@
 
             <execution>
               <id>npm rebuidl node-sass</id>
-              <phase>process-source</phase>
+              <phase>process-sources</phase>
               <goals>
                 <goal>npm</goal>
               </goals>
