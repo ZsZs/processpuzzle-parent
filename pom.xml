@@ -291,28 +291,30 @@
                 <goal>install-node-and-npm</goal>
               </goals>
             </execution>
-
+            
             <execution>
-              <id>npm update</id>
+              <id>npm install</id>
               <phase>process-sources</phase>
               <goals>
                 <goal>npm</goal>
               </goals>
               <configuration>
-                <arguments>update</arguments>
+                <arguments>install</arguments>
               </configuration>
             </execution>
+<!-- 
 
             <execution>
-              <id>npm rebuidl node-sass</id>
+              <id>npm rebuild node-sass</id>
               <phase>process-sources</phase>
               <goals>
                 <goal>npm</goal>
               </goals>
               <configuration>
-                <arguments>rebuild node-sass --force</arguments>
+                <arguments>rebuild node-sass</arguments>
               </configuration>
             </execution>
+ -->
 
             <execution>
               <id>npm run-script lint</id>
